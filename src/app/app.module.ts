@@ -1,7 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-
 // components
 import { AppComponent } from './app.component';
 import { HomeShellComponent } from './components/home-shell/home-shell.component';
@@ -13,6 +12,7 @@ import { SkillsComponent } from './components/home-shell/about/skills/skills.com
 import { WorkComponent } from './components/home-shell/work/work.component';
 import { HeaderComponent } from './components/header/header.component';
 import { NavHomeComponent } from './components/home-shell/nav-home/nav-home.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 // routing
 import { routing } from './routing/app.routing';
@@ -28,7 +28,8 @@ import { routing } from './routing/app.routing';
 		SkillsComponent,
 		WorkComponent,
 		HeaderComponent,
-		NavHomeComponent
+		NavHomeComponent,
+		ContactComponent
 	],
 	imports: [
 		BrowserModule,

@@ -1,0 +1,22 @@
+@import "../../../assets/scss/vars.scss";
+
+header {
+	padding: 20px 0 20px;
+
+	@media (min-width: $screenMD) {
+		padding: 30px 0 40px;
+	}
+}
+
+.wrapLogoPrimary {
+	width: 100px;
+	display: inline-block;
+
+	@media (min-width: $screenMD) {
+		width: 135px;
+	}
+
+	img {
+		width: 100%;
+	}
+}
