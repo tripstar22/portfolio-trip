@@ -5,3 +5,16 @@
 .txtCenter {
 	text-align: center;
 }
+
+ul {
+	list-style-type: none;
+	list-style: none;
+	padding-left: 0;
+}
+
+a {
+
+	&:focus {
+		outline: none;
+	}
+}

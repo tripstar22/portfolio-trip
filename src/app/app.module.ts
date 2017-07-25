@@ -11,7 +11,6 @@ import { AboutComponent } from './components/home-shell/about/about.component';
 import { SkillsComponent } from './components/home-shell/about/skills/skills.component';
 import { WorkComponent } from './components/home-shell/work/work.component';
 import { HeaderComponent } from './components/header/header.component';
-import { NavHomeComponent } from './components/home-shell/nav-home/nav-home.component';
 import { ContactComponent } from './components/contact/contact.component';
 
 // routing
@@ -28,7 +27,6 @@ import { routing } from './routing/app.routing';
 		SkillsComponent,
 		WorkComponent,
 		HeaderComponent,
-		NavHomeComponent,
 		ContactComponent
 	],
 	imports: [

@@ -1,10 +1,16 @@
 @import "../../../assets/scss/vars.scss";
 
 header {
+	position: relative;
+	z-index: 2;
 	padding: 20px 0 20px;
 
 	@media (min-width: $screenMD) {
 		padding: 30px 0 40px;
+	}
+
+	@media (min-width: $screenLG) {
+		text-align: center;
 	}
 }
 

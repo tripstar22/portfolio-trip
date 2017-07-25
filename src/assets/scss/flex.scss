@@ -1,0 +1,10 @@
+.flexWrap {
+	display: flex;
+	flex-flow: row wrap;
+	align-items: flex-start;
+}
+
+.flexItem {
+	order: 1;
+	flex: 0 1 auto;
+}

@@ -1,0 +1,17 @@
+nav {
+	padding-left: 40px;
+
+	li {
+		padding-bottom: 7px;
+
+		&:last-child {
+			padding-bottom: 0;
+		}
+	}
+
+	a {
+		font-family: 'Roboto Mono', monospace;
+		font-weight: 400;
+		text-decoration: none;
+	}
+}

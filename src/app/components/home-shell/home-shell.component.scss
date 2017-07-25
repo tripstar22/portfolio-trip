@@ -1,0 +1,22 @@
+@import "../../../assets/scss/vars.scss";
+@import "../../../assets/scss/nav.scss";
+
+.navMain {
+
+	@media (min-width: $screenLG) {
+		position: relative;
+	}
+
+	trip-nav-home {
+
+		@media (min-width: $screenLG) {
+			position: fixed;
+		}
+	}
+}
+
+#wrapContent {
+	background: $white;
+	position: relative;
+	z-index: 4;
+}
