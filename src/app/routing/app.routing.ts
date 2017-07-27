@@ -1,6 +1,7 @@
 import { Routes, RouterModule } from '@angular/router';
 import { HomeShellComponent } from '../components/home-shell/home-shell.component';
-import { ContactComponent } from '../components/contact/contact.component';
+import { AboutComponent } from '../components/home-shell/about/about.component';
+import { WorkComponent } from '../components/home-shell/work/work.component';
 
 const APP_ROUTES: Routes = [
 	{
@@ -8,8 +9,12 @@ const APP_ROUTES: Routes = [
 		component: HomeShellComponent
 	},
 	{
-		path: 'contact',
-		component: ContactComponent
+		path: '',
+		component: AboutComponent
+	},
+	{
+		path: '',
+		component: WorkComponent
 	}
 ];
 

@@ -1,5 +1,10 @@
+@import "vars.scss";
+
 nav {
-	padding-left: 40px;
+
+	@media (min-width: $screenLG) {
+		top: 300px;
+	}
 
 	li {
 		padding-bottom: 7px;
