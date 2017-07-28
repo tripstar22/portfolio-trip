@@ -4,7 +4,6 @@
 #home {
 	width: 100%;
 	background: $blue;
-	position: fixed;
 	top: 0;
 	z-index: 1;
 }
@@ -14,6 +13,11 @@
 }
 
 #navHero {
+	display: none;
+
+	@media (min-width: $screenLG) {
+		display: block;
+	}
 
 	nav {
 
@@ -31,12 +35,7 @@
 
 .wrapTypeLock {
 	width: 200px;
-	// position: absolute;
 	padding-top: 32px;
-	// left: 50%;
-	// -webkit-transform: translateX(-50%);
-	// -moz-transform: translateX(-50%);
-	// transform: translateX(-50%);
 	margin: 0 auto;
 
 	@media (min-width: 375px) {
@@ -72,9 +71,9 @@
 	transform: translateX(-25px);
 
 	img {
-		-webkit-animation: aniScroll 2s infinite;
-		-moz-animation: aniScroll 2s infinite;
-		animation: aniScroll 2s infinite;
+		-webkit-animation: aniScroll 1.5s infinite;
+		-moz-animation: aniScroll 1.5s infinite;
+		animation: aniScroll 1.5s infinite;
 	}
 }
 

@@ -9,14 +9,8 @@ export class HomeShellComponent implements OnInit {
 
 	constructor() { }
 
-	windowHeight() {
-		let w = window;
-		let wrap = document.getElementById("wrapContent");
-		wrap.style.top = w.innerHeight + "px";
-	}
-
 	ngOnInit() {
-		this.windowHeight();
+	
 	}
 
 }
