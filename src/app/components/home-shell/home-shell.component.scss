@@ -1,0 +1,33 @@
+@import "../../../assets/scss/vars.scss";
+@import "../../../assets/scss/nav.scss";
+
+#wrapContent {
+	background: $white;
+	position: relative;
+	z-index: 3;
+}
+
+#navMain {
+	display: none;
+
+	@media (min-width: $screenLG) {
+		display: block;
+	}
+
+	nav {
+
+		@media (min-width: $screenLG) {
+			position: fixed;
+			z-index: 4;
+			padding-left: 55px;
+		}
+
+		a {
+			color: $blue;
+
+			&:visited {
+				color: $blue;
+			}
+		}
+	}
+}

@@ -1,0 +1,10 @@
+@import "../../../../assets/scss/vars.scss";
+
+.flexItem {
+	width: 100%;
+
+	@media (min-width: $screenMD) {
+		width: 50%;
+		display: inline-block;
+	}
+}

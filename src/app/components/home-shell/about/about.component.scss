@@ -1,0 +1,10 @@
+@import "../../../../assets/scss/vars.scss";
+
+.wrapProfileImg {
+	width: 200px;
+	margin: 0 auto;
+
+	@media (min-width: $screenMD) {
+		width: 100%;
+	}
+}

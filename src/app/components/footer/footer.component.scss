@@ -1,0 +1,77 @@
+@import "../../../assets/scss/vars.scss";
+@import "../../../assets/scss/nav.scss";
+
+footer {
+	background: $black;
+	position: relative;
+	z-index: 6;
+	padding-bottom: 60px;
+
+	@media (min-width: $screenLG) {
+		background: $black url('../../../assets/img/trip_logo_secondary_gunmetal.svg') no-repeat 108% 122%;
+		background-size: 270px 270px;
+		padding-bottom: 220px;
+	}
+
+	@media (min-width: 1240px) {
+		background: $black url('../../../assets/img/trip_logo_secondary_gunmetal.svg') no-repeat 105% 119%;
+		background-size: 270px 270px;
+	}
+
+	nav {
+
+		@media (min-width: $screenLG) {
+			padding-left: 45px;
+		}
+
+		ul {
+			margin-top: 18px;
+		}
+
+		li {
+			font-size: 1em;
+			padding-bottom: 7px;
+		}
+
+		a {
+			color: $white;
+
+			&:visited {
+				color: $white;
+			}
+		}
+	}
+}
+
+p {
+	color: $white;
+	font-family: 'Roboto Mono', monospace;
+	font-weight: 300;
+	margin-top: 18px;
+}
+
+ul {
+
+	li {
+		font-size: 0.8em;
+		padding-bottom: 15px;
+
+		&:last-child {
+			padding-bottom: 0;
+		}
+	}
+
+	a {
+		color: $white;
+		font-family: 'Roboto Mono', monospace;
+		font-weight: 400;
+
+		&:visited {
+			color: $white;
+		}
+	}
+}
+
+h6 {
+	color: $white;
+}

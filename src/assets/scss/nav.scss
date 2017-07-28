@@ -1,0 +1,22 @@
+@import "vars.scss";
+
+nav {
+
+	@media (min-width: $screenLG) {
+		top: 300px;
+	}
+
+	li {
+		padding-bottom: 7px;
+
+		&:last-child {
+			padding-bottom: 0;
+		}
+	}
+
+	a {
+		font-family: 'Roboto Mono', monospace;
+		font-weight: 400;
+		text-decoration: none;
+	}
+}
