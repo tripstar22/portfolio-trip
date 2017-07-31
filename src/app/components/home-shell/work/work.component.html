@@ -4,14 +4,13 @@
 			<div class="small-12 columns">
 				<h2>Work</h2>
 				<ul>
-					<li>
+					<li *ngFor="let item of items | async">
 						<div class="txtCenter">
 							<img src="" alt="" />
 						</div>
-						<h5>Project</h5>
-						<ul class="tags">
-							<li></li>
-						</ul>
+						<h5>{{item.project}}</h5>
+						<p>{{item.desc}}</p>
+						<p>{{item.tags}}</p>
 					</li>
 				</ul>
 			</div>

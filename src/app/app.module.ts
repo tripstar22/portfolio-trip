@@ -18,6 +18,10 @@ import { ContactComponent } from './components/contact/contact.component';
 import { routing } from './routing/app.routing';
 // http service
 import { AppHttpService } from './services/app-http.service';
+// firebase imports
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { environment } from '../environments/environment';
 
 @NgModule({
 	declarations: [
@@ -35,7 +39,9 @@ import { AppHttpService } from './services/app-http.service';
 	imports: [
 		BrowserModule,
 		HttpModule,
-		routing
+		routing,
+		AngularFireModule.initializeApp(environment.firebase),
+		AngularFireDatabaseModule
 	],
   providers: [
   		AppHttpService

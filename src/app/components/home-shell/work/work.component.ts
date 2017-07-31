@@ -1,15 +1,20 @@
 import { Component, OnInit } from '@angular/core';
+import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
 
 @Component({
-  selector: 'trip-work',
-  templateUrl: './work.component.html',
-  styleUrls: ['./work.component.scss']
+	selector: 'trip-work',
+	templateUrl: './work.component.html',
+	styleUrls: ['./work.component.scss']
 })
 export class WorkComponent implements OnInit {
 
-  constructor() { }
+	items: FirebaseListObservable<any[]>;
 
-  ngOnInit() {
-  }
+	constructor(db: AngularFireDatabase) {
+		this.items = db.list('/items');
+	}
+
+	ngOnInit() {
+	}
 
 }
