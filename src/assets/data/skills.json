@@ -1,0 +1,26 @@
+[
+	{
+		"name": "HTML5",
+		"img": "assets/img/logo_html.svg"
+	},
+	{
+		"name": "JavaScript",
+		"img": "assets/img/logo_js.svg"
+	},
+	{
+		"name": "AngularJS",
+		"img": "assets/img/logo_angular.svg"
+	},
+	{
+		"name": "Scss",
+		"img": "assets/img/logo_sass.svg"
+	},
+	{
+		"name": "Node.js",
+		"img": "assets/img/logo_node.svg"
+	},
+	{
+		"name": "Git",
+		"img": "assets/img/logo_git.svg"
+	}
+]

@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpModule } from '@angular/http';
 
 // components
 import { AppComponent } from './app.component';
@@ -15,6 +16,8 @@ import { ContactComponent } from './components/contact/contact.component';
 
 // routing
 import { routing } from './routing/app.routing';
+// http service
+import { AppHttpService } from './services/app-http.service';
 
 @NgModule({
 	declarations: [
@@ -31,9 +34,12 @@ import { routing } from './routing/app.routing';
 	],
 	imports: [
 		BrowserModule,
+		HttpModule,
 		routing
 	],
-  providers: [],
+  providers: [
+  		AppHttpService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
