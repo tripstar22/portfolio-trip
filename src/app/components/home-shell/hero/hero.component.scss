@@ -3,7 +3,7 @@
 
 #home {
 	width: 100%;
-	background: $blue;
+	background: url('https://res.cloudinary.com/tripstar/image/upload/v1501621691/bg_blue_hpw6cq.png') repeat top left;
 	top: 0;
 	z-index: 1;
 }
@@ -53,7 +53,7 @@
 
 	@media (min-width: $screenLG) {
 		width: 300px;
-		padding-top: 95px;
+		padding-top: 70px;
 	}
 
 	svg {
@@ -114,9 +114,4 @@
 
 .home {
 	position: relative;
-}
-
-h1 {
-	position: relative;
-	z-index: 0;
 }

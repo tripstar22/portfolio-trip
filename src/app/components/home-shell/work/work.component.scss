@@ -1,4 +1,5 @@
 @import "../../../../assets/scss/vars.scss";
+@import "../../../../assets/scss/flex.scss";
 
 .flexItem {
 	width: 100%;
@@ -6,5 +7,45 @@
 	@media (min-width: $screenMD) {
 		width: 50%;
 		display: inline-block;
+
+		&:nth-child(odd) {
+			padding-right: 20px;
+		}
+
+		&:nth-child(even) {
+			padding-left: 20px;
+		}
+	}
+
+	@media (min-width: $screenLG) {
+		&:nth-child(odd) {
+			padding-right: 40px;
+		}
+
+		&:nth-child(even) {
+			padding-left: 40px;
+		}
+	}
+}
+
+h4 {
+	margin-bottom: 18px;
+}
+
+.skills {
+	color: $gunmetal;
+	font-family: 'Roboto Mono', monospace;
+	font-size: 0.875em;
+}
+
+p {
+	line-height: 28px;
+}
+
+#projects {
+	padding-bottom: 40px;
+
+	@media (min-width: $screenMD) {
+		padding-bottom: 60px;
 	}
 }

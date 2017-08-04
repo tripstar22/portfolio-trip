@@ -8,13 +8,13 @@ footer {
 	padding-bottom: 60px;
 
 	@media (min-width: $screenLG) {
-		background: $black url('../../../assets/img/trip_logo_secondary_gunmetal.svg') no-repeat 108% 122%;
+		background: $black url('https://res.cloudinary.com/tripstar/image/upload/v1501592883/trip_logo_secondary_gunmetal_xent7r.svg') no-repeat 108% 122%;
 		background-size: 270px 270px;
 		padding-bottom: 220px;
 	}
 
 	@media (min-width: 1240px) {
-		background: $black url('../../../assets/img/trip_logo_secondary_gunmetal.svg') no-repeat 105% 119%;
+		background: $black url('https://res.cloudinary.com/tripstar/image/upload/v1501592883/trip_logo_secondary_gunmetal_xent7r.svg') no-repeat 105% 119%;
 		background-size: 270px 270px;
 	}
 
@@ -72,6 +72,13 @@ ul {
 	}
 }
 
-h6 {
+h4 {
 	color: $white;
+}
+
+.wrapFooter {
+
+	@media (min-width: $screenMD) {
+		text-align: center;
+	}
 }

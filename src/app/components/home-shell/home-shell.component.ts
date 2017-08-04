@@ -10,7 +10,7 @@ export class HomeShellComponent implements OnInit {
 	constructor() { }
 
 	ngOnInit() {
-	
+
 	}
 
 }
