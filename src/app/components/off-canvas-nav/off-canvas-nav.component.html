@@ -1,0 +1,15 @@
+<div class="wrapMenu">
+	<a href="" id="btnMenu" (click)="btnMenu($event)"></a>
+</div>
+<div id="navOffCanvas" (window:resize)="menuStyles($event)">
+	<div class="wrapNav">
+		<nav class="txtCenter">
+			<ul>
+				<li><a href="#home" (click)="menuHide($event)">home</a></li>
+				<li><a href="#about" (click)="menuHide($event)">about</a></li>
+				<li><a href="#projects" (click)="menuHide($event)">projects</a></li>
+				<li><a href="#contact" (click)="menuHide($event)">contact</a></li>
+			</ul>
+		</nav>
+	</div>
+</div>

@@ -1,17 +1,16 @@
-<div class="row expanded">
+<div id="projects" class="row expanded">
 	<div class="small-12 large-10 large-offset-2 columns">
 		<div class="row">
 			<div class="small-12 columns">
-				<h2>Work</h2>
-				<ul>
-					<li>
+				<h2>The Work</h2>
+				<ul class="flexWrap">
+					<li *ngFor="let item of items | async" class="flexItem">
 						<div class="txtCenter">
 							<img src="" alt="" />
 						</div>
-						<h5>Project</h5>
-						<ul class="tags">
-							<li></li>
-						</ul>
+						<h3>{{item.project}}</h3>
+						<p class="desc">{{item.desc}}</p>
+						<p class="skills">Skills used&#58; {{item.tags}}</p>
 					</li>
 				</ul>
 			</div>

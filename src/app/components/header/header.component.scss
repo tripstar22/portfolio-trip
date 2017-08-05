@@ -26,3 +26,10 @@ header {
 		width: 100%;
 	}
 }
+
+trip-off-canvas-nav {
+
+	@media (min-width: $screenLG) {
+		display: none;
+	}
+}

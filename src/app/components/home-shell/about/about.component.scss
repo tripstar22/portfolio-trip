@@ -1,10 +1,60 @@
 @import "../../../../assets/scss/vars.scss";
 
 .wrapProfileImg {
-	width: 200px;
-	margin: 0 auto;
 
 	@media (min-width: $screenMD) {
 		width: 100%;
+		position: relative;
+	}
+
+	img {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		-webkit-transform: translateX(-50%);
+		-moz-transform: translateX(-50%);
+		transform: translateX(-50%);
+
+		@media (min-width: 740px) {
+			width: 70%;
+		}
+
+		@media (min-width: 890px) {
+			width: 65%;
+		}
+
+		@media (min-width: $screenLG) {
+			width: 100%;
+		}
+	}
+}
+
+.wrapAbout {
+	padding: 40px 0 60px;
+
+	@media (min-width: $screenMD) {
+		padding: 40px 0 0;
+	}
+
+	@media(min-width: $screenLG) {
+		padding: 100px 0 0;
+	}
+
+	h2 {
+		min-height: 70px;
+		font-size: 1.35em;
+		padding-top: 0;
+		margin-top: 0;
+	}
+
+	p {
+		margin: 8px 0;
+
+		&:last-child {
+
+			@media (min-width: $screenLG) {
+				padding-bottom: 10px;
+			}
+		}
 	}
 }
