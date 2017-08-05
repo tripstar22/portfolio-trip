@@ -12,16 +12,20 @@ import { AboutComponent } from './components/home-shell/about/about.component';
 import { SkillsComponent } from './components/home-shell/about/skills/skills.component';
 import { WorkComponent } from './components/home-shell/work/work.component';
 import { HeaderComponent } from './components/header/header.component';
-import { ContactComponent } from './components/contact/contact.component';
+import { OffCanvasNavComponent } from './components/off-canvas-nav/off-canvas-nav.component';
 
+// *** routing commented out for 1.0 version bc app is one page ***
 // routing
-import { routing } from './routing/app.routing';
+// import { routing } from './routing/app.routing';
+
 // http service
 import { AppHttpService } from './services/app-http.service';
 // firebase imports
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { environment } from '../environments/environment';
+// smooth scroll
+import { ScrollToModule } from 'ng2-scroll-to';
 
 @NgModule({
 	declarations: [
@@ -34,14 +38,15 @@ import { environment } from '../environments/environment';
 		SkillsComponent,
 		WorkComponent,
 		HeaderComponent,
-		ContactComponent
+		OffCanvasNavComponent
 	],
 	imports: [
 		BrowserModule,
 		HttpModule,
-		routing,
+		// routing,
 		AngularFireModule.initializeApp(environment.firebase),
-		AngularFireDatabaseModule
+		AngularFireDatabaseModule,
+		ScrollToModule.forRoot()
 	],
   providers: [
   		AppHttpService

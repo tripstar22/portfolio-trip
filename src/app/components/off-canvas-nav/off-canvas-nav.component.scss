@@ -1,0 +1,53 @@
+@import "../../../assets/scss/vars.scss";
+@import "../../../assets/scss/nav.scss";
+
+.wrapMenu {
+	position: absolute;
+	top: 30px;
+	right: 32px;
+	z-index: 4;
+}
+
+#navOffCanvas {
+	width: 100%;
+	background: url('https://res.cloudinary.com/tripstar/image/upload/v1501621691/bg_blue_hpw6cq.png') repeat top left;
+	position: fixed;
+	top: 0;
+	z-index: 3;
+	-webkit-transition: all 0.2s ease-in-out;
+	moz-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+
+#navOffCanvas.aniMenu {
+	overflow: hidden;
+	left: 0;
+}
+
+.wrapNav {
+	padding-top: 160px;
+
+	li {
+		padding-bottom: 27px;
+	}
+
+	a {
+		color: $white;
+	}
+}
+
+#btnMenu {
+	width: 40px;
+	height: 20px;
+	display: block;
+	background: url('https://res.cloudinary.com/tripstar/image/upload/v1501872200/icon_menu_fz2x6x.svg') no-repeat center center;
+	background-size: 40px 20px;
+	-webkit-transition: all 0.2s ease-in-out;
+	moz-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+
+#btnMenu.aniBtn {
+	background: url('https://res.cloudinary.com/tripstar/image/upload/v1501873714/icon_close_khwpxw.svg') no-repeat center center;
+	background-size: 40px 20px;
+}

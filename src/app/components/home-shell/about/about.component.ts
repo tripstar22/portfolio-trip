@@ -38,7 +38,6 @@ export class AboutComponent implements OnInit {
 			let wrap = <HTMLElement> document.querySelectorAll(".wrapAbout")[0];
 			let wrapImg = <HTMLElement> document.querySelectorAll(".wrapProfileImg")[0];
 			wrapImg.style.height = wrap.offsetHeight + "px";
-			console.log(wrap.offsetHeight);
 		}
 	}
 
