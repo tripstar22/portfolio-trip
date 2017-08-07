@@ -13,7 +13,6 @@ export class HeroComponent implements OnInit {
 		let w = window;
 		let wrap = document.getElementById("home");
 		wrap.style.height = w.innerHeight + "px";
-		console.log(w.innerHeight);
 	}
 
 	ngOnInit() {

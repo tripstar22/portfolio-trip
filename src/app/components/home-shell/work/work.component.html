@@ -6,11 +6,11 @@
 				<ul class="flexWrap">
 					<li *ngFor="let item of items | async" class="flexItem">
 						<div class="txtCenter">
-							<img src="" alt="" />
+							<img src="{{item.img}}" alt="{{item.title}}" />
 						</div>
-						<h3>{{item.project}}</h3>
+						<h3>{{item.title}}</h3>
 						<p class="desc">{{item.desc}}</p>
-						<p class="skills">Skills used&#58; {{item.tags}}</p>
+						<p class="skills"><span>Skills used&#58;</span> {{item.tags}}</p>
 					</li>
 				</ul>
 			</div>

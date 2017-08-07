@@ -3,6 +3,7 @@
 
 .flexItem {
 	width: 100%;
+	padding-bottom: 50px;
 
 	@media (min-width: $screenMD) {
 		width: 50%;
@@ -18,6 +19,8 @@
 	}
 
 	@media (min-width: $screenLG) {
+		padding-bottom: 80px;
+
 		&:nth-child(odd) {
 			padding-right: 40px;
 		}
@@ -36,16 +39,12 @@ h4 {
 	color: $gunmetal;
 	font-family: 'Roboto Mono', monospace;
 	font-size: 0.875em;
+
+	span {
+		font-weight: bold;
+	}
 }
 
 p {
 	line-height: 28px;
-}
-
-#projects {
-	padding-bottom: 40px;
-
-	@media (min-width: $screenMD) {
-		padding-bottom: 60px;
-	}
 }
