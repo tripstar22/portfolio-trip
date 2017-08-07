@@ -5,8 +5,6 @@ import { HttpModule } from '@angular/http';
 // components
 import { AppComponent } from './app.component';
 import { HomeShellComponent } from './components/home-shell/home-shell.component';
-// *** WorkDetailShellComponent commented out for 1.0 version ***
-//import { WorkDetailShellComponent } from './components/work-detail-shell/work-detail-shell.component';
 import { HeroComponent } from './components/home-shell/hero/hero.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { AboutComponent } from './components/home-shell/about/about.component';
