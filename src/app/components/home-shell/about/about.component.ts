@@ -41,7 +41,26 @@ export class AboutComponent implements OnInit {
 		}
 	}
 
+
+
 	ngOnInit() {
+		// create vars for window, document, body
+		let w = window;
+		let d = document;
+		let b = document.body;
+		// create vars for animated elements
+		let wrap = document.getElementById("wrapAboutContent");
+		let img = document.querySelectorAll(".wrapProfileImg img")[0];
+		// add scroll event listener
+		d.addEventListener("scroll", function(event) {
+			// desktop animations
+			if (w.innerWidth >= 1024) {
+				if (b.scrollTop >= 500) {
+					wrap.classList.remove("aniY");
+					img.classList.remove("hidden");
+				}
+			}
+		});
 		this.aniHeading();
 		this.imagePosition();
 	}

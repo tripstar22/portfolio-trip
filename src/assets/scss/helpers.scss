@@ -22,3 +22,14 @@ a {
 .noScroll {
 	overflow: hidden;
 }
+
+.hidden {
+	opacity: 0;
+}
+
+.aniY {
+	opacity: 0;
+	-webkit-transform: translateY(-30px);
+	-moz-transform: translateY(-30px);
+	transform: translateY(-30px);
+}

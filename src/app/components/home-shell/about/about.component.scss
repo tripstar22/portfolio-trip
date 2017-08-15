@@ -14,6 +14,9 @@
 		-webkit-transform: translateX(-50%);
 		-moz-transform: translateX(-50%);
 		transform: translateX(-50%);
+		-webkit-transition: all 0.3s ease-in-out;
+		-moz-transition: all 0.3s ease-in-out;
+		transition: all 0.3s ease-in-out;
 
 		@media (min-width: 740px) {
 			width: 70%;
@@ -57,4 +60,10 @@
 			}
 		}
 	}
+}
+
+#wrapAboutContent {
+	-webkit-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
 }
