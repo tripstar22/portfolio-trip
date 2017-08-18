@@ -1,4 +1,4 @@
-import { Component, OnInit, AfterViewInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { AppHttpService } from '../../../../services/app-http.service';
 
 @Component({
@@ -7,7 +7,7 @@ import { AppHttpService } from '../../../../services/app-http.service';
 	styleUrls: ['./skills.component.scss'],
 	providers: [AppHttpService]
 })
-export class SkillsComponent implements OnInit, AfterViewInit {
+export class SkillsComponent implements OnInit {
 
 	items: any;
 
@@ -21,33 +21,26 @@ export class SkillsComponent implements OnInit, AfterViewInit {
 			data => {this.items = data},
 			error => console.log(error),
 			() => console.log('subscribe complete')
-		)
+		);
 	}
 
 	ngOnInit() {
-
-	}
-
-	ngAfterViewInit() {
 		// create vars for window, document, body
-		let w = window;
-		let d = document;
-		let b = document.body;
+		const w = window;
+		const d = document;
+		const b = document.body;
+		// create var for function to fire once on scroll
+		let fired = 0;
 		// create vars for animated elements
-		let img_html = document.getElementById("html5");
-		let img_js = document.getElementById("javascript");
-		let img_ng = document.getElementById("angularjs");
-		let img_scss = document.getElementById("scss");
-		let img_node = document.getElementById("node");
-		let img_git = document.getElementById("git");
+		const wrap = d.querySelectorAll('.wrapSkills .flexWrap')[0];
 		// add scroll event listener
-		d.addEventListener("scroll", function(event) {
+		d.addEventListener('scroll', function(event) {
 			// desktop animations
-			if (w.innerWidth >= 1024) {
-				console.log(img_html);
-				// if (b.scrollTop >= 500) {
-				//
-				// }
+			if ((w.innerWidth >= 1024) && (fired === 0)) {
+				if (b.scrollTop >= 1025) {
+					wrap.classList.remove('aniY');
+					fired = 1;
+				}
 			}
 		});
 	}
