@@ -1,26 +1,26 @@
 [
 	{
-		"name": "HTML5",
+		"name": "html5",
 		"img": "https://res.cloudinary.com/tripstar/image/upload/v1501592381/logo_html_rgu5tt.svg"
 	},
 	{
-		"name": "JavaScript",
+		"name": "javascript",
 		"img": "https://res.cloudinary.com/tripstar/image/upload/v1501592381/logo_js_m3rguz.svg"
 	},
 	{
-		"name": "AngularJS",
+		"name": "angularjs",
 		"img": "https://res.cloudinary.com/tripstar/image/upload/v1501592381/logo_angular_tpbo1b.svg"
 	},
 	{
-		"name": "Scss",
+		"name": "scss",
 		"img": "https://res.cloudinary.com/tripstar/image/upload/v1501592384/logo_sass_owvvxp.svg"
 	},
 	{
-		"name": "Node.js",
+		"name": "node",
 		"img": "https://res.cloudinary.com/tripstar/image/upload/v1501592381/logo_node_wigllv.svg"
 	},
 	{
-		"name": "Git",
+		"name": "git",
 		"img": "https://res.cloudinary.com/tripstar/image/upload/v1501592381/logo_git_u3e8bt.svg"
 	}
 ]
