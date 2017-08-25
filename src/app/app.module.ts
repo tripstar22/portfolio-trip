@@ -47,9 +47,9 @@ import { ScrollToModule } from 'ng2-scroll-to';
 		AngularFireDatabaseModule,
 		ScrollToModule.forRoot()
 	],
-  providers: [
-  		AppHttpService
-  ],
-  bootstrap: [AppComponent]
+	providers: [
+		AppHttpService
+	],
+	bootstrap: [AppComponent]
 })
 export class AppModule { }
