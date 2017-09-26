@@ -44,6 +44,7 @@ export class AboutComponent implements OnInit {
 
 
 	ngOnInit() {
+		var e = Event;
 		// create vars for window, document, body
 		const w = window;
 		const d = document;
@@ -54,7 +55,7 @@ export class AboutComponent implements OnInit {
 		// create var for function to fire once on scroll
 		let fired = 0;
 		// add scroll event listener
-		d.addEventListener('scroll', function(event) {
+		d.addEventListener('scroll', function(e) {
 			// desktop animations
 			if (w.innerWidth >= 1024) {
 				if ((b.scrollTop >= 500) && (fired === 0)) {

@@ -7,16 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OffCanvasNavComponent implements OnInit {
 
-	constructor() { }
+	constructor() {
 
-	menuStyles(event) {
+		var e = Event;
+	 }
+
+	menuStyles(e) {
 		const w = window;
 		const wrap = document.getElementById('navOffCanvas');
 		wrap.style.height = w.innerHeight + 'px';
 		wrap.style.right = w.innerWidth + 'px';
 	}
 
-	btnMenu($event) {
+	btnMenu(e) {
 		const h = document.querySelectorAll('html')[0];
 		const b = document.body;
 		const btn = document.getElementById('btnMenu');
@@ -26,10 +29,9 @@ export class OffCanvasNavComponent implements OnInit {
 		btn.classList.toggle('aniBtn');
 		wrap.classList.toggle('aniMenu');
 		event.preventDefault();
-		console.log(h);
 	}
 
-	menuHide($event) {
+	menuHide(e) {
 		const h = document.querySelectorAll('html')[0];
 		const b = document.body;
 		const btn = document.getElementById('btnMenu');
@@ -41,8 +43,9 @@ export class OffCanvasNavComponent implements OnInit {
 	}
 
 	ngOnInit() {
+		var e = Event;
 		const w = window;
-		this.menuStyles(event);
+		this.menuStyles(e);
 	}
 
 }

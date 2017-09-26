@@ -7,16 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeroComponent implements OnInit {
 
-	constructor() { }
+	constructor() {
 
-	windowHeight(event) {
+		var e = Event;
+	 }
+
+	windowHeight(e) {
 		const w = window;
 		const wrap = document.getElementById('home');
 		wrap.style.height = w.innerHeight + 'px';
 	}
 
 	ngOnInit() {
-		this.windowHeight(event);
+		var e = Event;
+		this.windowHeight(e);
 	}
 
 }
