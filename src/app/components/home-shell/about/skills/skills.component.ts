@@ -25,25 +25,7 @@ export class SkillsComponent implements OnInit {
 	}
 
 	ngOnInit() {
-		var e = Event;
-		// create vars for window, document, body
-		const w = window;
-		const d = document;
-		const b = document.body;
-		// create var for function to fire once on scroll
-		let fired = 0;
-		// create vars for animated elements
-		const wrap = d.querySelectorAll('.wrapSkills .flexWrap')[0];
-		// add scroll event listener
-		d.addEventListener('scroll', function(e) {
-			// desktop animations
-			if ((w.innerWidth >= 1024) && (fired === 0)) {
-				if (b.scrollTop >= 1025) {
-					wrap.classList.remove('aniY');
-					fired = 1;
-				}
-			}
-		});
+		
 	}
 
 }

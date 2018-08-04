@@ -7,10 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeroComponent implements OnInit {
 
-	constructor() {
+	e: any;
 
-		var e = Event;
-	 }
+	constructor() {
+	}
 
 	windowHeight(e) {
 		const w = window;
@@ -19,8 +19,8 @@ export class HeroComponent implements OnInit {
 	}
 
 	ngOnInit() {
-		var e = Event;
-		this.windowHeight(e);
+		
+		this.windowHeight(this.e);
 	}
 
 }

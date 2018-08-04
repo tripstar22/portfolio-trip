@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutComponent implements OnInit {
 
+	e: any;
+
 	constructor() {
 	}
 
@@ -44,27 +46,6 @@ export class AboutComponent implements OnInit {
 
 
 	ngOnInit() {
-		var e = Event;
-		// create vars for window, document, body
-		const w = window;
-		const d = document;
-		const b = document.body;
-		// create vars for animated elements
-		const wrap = document.getElementById('wrapAboutContent');
-		const img = document.querySelectorAll('.wrapProfileImg img')[0];
-		// create var for function to fire once on scroll
-		let fired = 0;
-		// add scroll event listener
-		d.addEventListener('scroll', function(e) {
-			// desktop animations
-			if (w.innerWidth >= 1024) {
-				if ((b.scrollTop >= 500) && (fired === 0)) {
-					wrap.classList.remove('aniY');
-					img.classList.remove('hidden');
-					fired = 1;
-				}
-			}
-		});
 		this.aniHeading();
 		this.imagePosition();
 	}
